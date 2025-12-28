@@ -171,7 +171,7 @@ export default function Home() {
 
         <div className="product-grid">
           {flashSaleProducts.map((product, index) => (
-            <a href={`/products/${index}`} key={index} className="product-card">
+            <a href={`/products/1`} key={index} className="product-card">
               <div className="product-image">
                 <Image
                   src={product.image || "/placeholder.svg"}
@@ -211,11 +211,7 @@ export default function Home() {
         <h2>TENSHI Recommends</h2>
         <div className="recommends-grid">
           {recommendedProducts.map((product, index) => (
-            <a
-              href={`/products/${index}`}
-              key={index}
-              className="recommend-card"
-            >
+            <a href={`/products/1`} key={index} className="recommend-card">
               <div className="recommend-image">
                 <Image
                   src={product.image || "/placeholder.svg"}

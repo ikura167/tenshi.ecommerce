@@ -287,7 +287,7 @@ export default function ProductsPage() {
         <div className="products-grid">
           {products.map((product, index) => (
             <a
-              href={`/products/${index}`}
+              href={`/products/1`}
               key={index}
               className="products-product-card"
             >
