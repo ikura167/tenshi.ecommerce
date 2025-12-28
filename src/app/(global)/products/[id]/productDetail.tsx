@@ -14,11 +14,7 @@ import {
 import { useState } from "react";
 import "./productDetail.css";
 
-interface Product {
-  id: string;
-}
-
-export default function ProductDetail({ params }: { params: Product }) {
+export default function ProductDetail({ id }: { id: string }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedPlatform, setSelectedPlatform] = useState("1688");
   const [quantity, setQuantity] = useState(1);
